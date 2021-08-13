@@ -1,0 +1,31 @@
+{
+  "name": "vue3-doc-plugin",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "module": "dist/index.mjs",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm,cjs",
+    "build:tsc": "tsc src"
+  },
+  "dependencies": {
+    "@types/node": "^16.4.13",
+    "@vue/compiler-sfc": "^3.1.5",
+    "@vuedx/analyze": "^0.7.4",
+    "@vuese/parser": "^2.10.3",
+    "docsify-cli": "^4.4.3",
+    "esbuild": "^0.12.19",
+    "global": "^4.4.0",
+    "tsup": "^4.13.1",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

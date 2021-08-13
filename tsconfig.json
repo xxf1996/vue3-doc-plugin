@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
+    "strict": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "noImplicitAny": false,
+    "module": "ESNext",
+    "target": "ES6",
+    "outDir": "dist",
+    "noEmitOnError": true,
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+  ],
+  "exclude": [
+    ".vscode",
+    "dist",
+    "node_modules"
+  ]
+}
